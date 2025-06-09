@@ -1,0 +1,33 @@
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -5px;
+  cursor: col-resize;
+  z-index: 1;
+}
+.dragHandler:hover {
+  cursor: move;
+  background-color: #238466;
+}
+.ant-dropdown-link {
+  padding: 6px;
+  border-radius: 8px;
+  padding-top: 4px;
+  background: #004750;
+  color: #fff !important;
+  font-size: 14px;
+}
+.ant-btn[disabled] {
+  background: #004750 !important;
+  color: #fff !important;
+}
+.instorage {
+  font-size: 14px;
+  font-weight: 600;
+}

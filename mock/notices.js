@@ -1,0 +1,103 @@
+const getNotices = (req, res) => {
+  res.json([
+    {
+      id: '000000001',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
+      title: 'Notification 1',
+      datetime: '2017-08-09',
+      type: 'notification',
+    },
+    {
+      id: '000000002',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png',
+      title: 'Notification 2',
+      datetime: '2017-08-08',
+      type: 'notification',
+    },
+    {
+      id: '000000003',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png',
+      title: 'Notification 3',
+      datetime: '2017-08-07',
+      read: true,
+      type: 'notification',
+    },
+    {
+      id: '000000004',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/GvqBnKhFgObvnSGkDsje.png',
+      title: 'Notification 4',
+      datetime: '2017-08-07',
+      type: 'notification',
+    },
+    {
+      id: '000000005',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
+      title: 'Notification 5',
+      datetime: '2017-08-07',
+      type: 'notification',
+    },
+    {
+      id: '000000006',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+      title: 'Notification 6',
+      description: 'Notification Description',
+      datetime: '2017-08-07',
+      type: 'message',
+      clickClose: true,
+    },
+    {
+      id: '000000007',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+      title: 'Notification 7',
+      description: 'Notification Description',
+      datetime: '2017-08-07',
+      type: 'message',
+      clickClose: true,
+    },
+    {
+      id: '000000008',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+      title: 'Notification 8',
+      description: 'Notification Description',
+      datetime: '2017-08-07',
+      type: 'message',
+      clickClose: true,
+    },
+    {
+      id: '000000009',
+      title: 'Notification 9',
+      description: 'Notification Description',
+      extra: 'Extra Info',
+      status: 'todo',
+      type: 'event',
+    },
+    {
+      id: '000000010',
+      title: 'Notification 10',
+      description: 'Notification Description',
+      extra: 'Extra Info',
+      status: 'urgent',
+      type: 'event',
+    },
+    {
+      id: '000000011',
+      title: 'Notification 11',
+      description: 'Notification Description',
+      extra: 'Extra Info',
+      status: 'doing',
+      type: 'event',
+    },
+    {
+      id: '000000012',
+      title: 'Notification 12',
+      description: 'Notification Description',
+      extra: 'Extra Info',
+      status: 'processing',
+      type: 'event',
+    },
+  ]);
+};
+
+export default {
+  'GET /api/notices': getNotices,
+};

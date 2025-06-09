@@ -1,0 +1,46 @@
+.pagination {
+
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e3e3e3;
+}
+
+.pageInfo {
+    color: #a0a3bd;
+    font-size: 0.874em;
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+}
+
+.pagebuttons {
+    display: flex;
+    margin: 2px;
+    text-align: right;
+    justify-content: space-between;
+    align-items: baseline;
+    float: right;
+}
+
+.pageBtn {
+    border: 1px solid #a0a3bd;
+    color: #a0a3bd;
+    border-radius: 5px;
+    margin: 5px;
+    width: 28px;
+    height: 28px;
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.activeBtn {
+    border: 1px solid blue;
+    color: blue;
+    background-color: transparent;
+}
+
+.disabledPageBtn {
+    background-color: #a0a3bd;
+    cursor: not-allowed;
+    opacity: 0.5;
+}

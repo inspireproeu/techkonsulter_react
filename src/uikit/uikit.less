@@ -1,0 +1,1156 @@
+@import '~antd/es/style/themes/default.less';
+
+.input {
+	:global {
+		.ant-input {
+			background-color: transparent !important;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			color: #2a2b2d;
+			line-height: normal;
+		}
+		.ant-input-affix-wrapper {
+			border-radius: 6px !important;
+			box-shadow: 0 0 0 0px rgba(248, 0, 89, 0.2) !important;
+			align-items: center;
+		}
+		.ant-input-affix-wrapper:hover,
+		.ant-input-affix-wrapper:focus-within {
+			background: #f6f9fb;
+			border: 1px solid #277fff !important;
+
+			.ant-input-prefix > svg > path {
+				stroke: #277fff !important;
+			}
+			.ant-input-prefix {
+				color: #277fff !important;
+			}
+			.ant-input::placeholder {
+				color: #ced5e0;
+			}
+		}
+		.ant-input::placeholder {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			color: #9199aa;
+			line-height: 20px;
+		}
+
+		.ant-input::-moz-placeholder {
+			line-height: 40px;
+		}
+
+		.ant-form-item-explain {
+			padding-left: 13px;
+			text-align: left;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 15px;
+		}
+
+		.ant-form-item-label > label {
+			font-weight: 700;
+			color: #004750 !important;
+			font-size: 14px !important;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+		.ant-input-suffix {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: right;
+			color: #2a2b2d;
+			max-width: 100px;
+		}
+		.anticon {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+}
+
+.inputHideIcon {
+	:global {
+		.ant-input-prefix {
+			margin-right: 5px !important;
+		}
+	}
+}
+
+.inputNoBorder {
+	:global {
+		.ant-input {
+			height: 38px !important;
+		}
+		.ant-input-prefix > svg {
+			font-size: 20px;
+			margin-right: 12px;
+			margin-left: 5px;
+			& > path {
+				stroke: #9199aa;
+			}
+		}
+
+		.ant-input-prefix {
+			font-size: 25px;
+			color: #9199aa !important;
+		}
+
+		.ant-input-affix-wrapper {
+			height: 50px !important;
+			border: 0px solid #ffffff !important;
+			background-color: #f6f9fb;
+		}
+	}
+
+	&:global(.ant-form-item-has-error) {
+		:global(.ant-input-affix-wrapper) {
+			background: #f6f9fb;
+			border: 1px solid #f80059 !important;
+		}
+
+		:global(.ant-input-prefix) {
+			color: #f80059 !important;
+		}
+
+		:global(.ant-input-prefix) > svg > path {
+			stroke: #f80059 !important;
+		}
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:focus-within,
+	input:-webkit-autofill:active {
+		transition: background-color 1s ease-in-out 0s !important;
+		-webkit-transition: background-color 1s ease-in-out 0s !important;
+		box-shadow: 0 0 0 100px #f6f9fb inset !important;
+		-webkit-box-shadow: 0 0 0 100px #f6f9fb inset !important;
+	}
+}
+
+.inputBorder {
+	:global {
+		.ant-input {
+			height: 42px !important;
+		}
+		.ant-input-prefix > svg {
+			font-size: 20px;
+			margin-right: 12px;
+			margin-left: 5px;
+			& > path {
+				stroke: #d1d6da;
+			}
+		}
+
+		.ant-input-prefix {
+			font-size: 25px;
+			color: #d1d6da !important;
+		}
+
+		.ant-input-affix-wrapper {
+			height: 54px !important;
+			border: 1px solid #d1d6da;
+			background-color: #ffffff;
+		}
+
+		.ant-input-affix-wrapper:hover,
+		.ant-input-affix-wrapper:focus-within {
+			background: #ffffff;
+		}
+	}
+
+	&:global(.ant-form-item-has-error) {
+		:global(.ant-input-affix-wrapper) {
+			background: #ffffff;
+			border: 1px solid #f80059 !important;
+		}
+
+		:global(.ant-input-prefix) {
+			color: #f80059 !important;
+		}
+
+		:global(.ant-input-prefix) > svg > path {
+			stroke: #f80059 !important;
+		}
+	}
+}
+
+//-------------- Picker -----
+
+.picker {
+	:global {
+		.ant-picker {
+			width: 100%;
+			height: 54px;
+			border-radius: 6px;
+			border: 1px solid #d1d6da;
+
+			.ant-picker-suffix {
+				color: #d1d6da !important;
+				font-size: 20px;
+			}
+		}
+		.ant-picker-input > input {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+			color: #2a2b2d;
+		}
+		.ant-picker-focused {
+			border: 1px solid #004750;
+			box-shadow: 0 0 black;
+
+			.ant-picker-suffix {
+				color: #004750 !important;
+				font-size: 20px;
+			}
+		}
+
+		.ant-picker-clear {
+			color: #004750 !important;
+			font-size: 20px;
+		}
+
+		.ant-input::placeholder {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+			color: #9199aa;
+		}
+
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+}
+
+//-------------- TextArea -----
+
+.textArea {
+	textarea {
+		background-color: transparent;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #2a2b2d;
+	}
+	textarea::placeholder {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #9199aa;
+	}
+	:global {
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+}
+
+.textAreaNoBorder {
+	textarea {
+		min-height: 100px !important;
+		border-radius: 6px !important;
+		border: 0px solid #ffffff;
+		background-color: #f6f9fb;
+		box-shadow: 0 0 0 0px rgba(0, 204, 189, 0.2) !important;
+	}
+	textarea:hover,
+	textarea:focus-within {
+		background: #ffffff;
+		border: 1px solid #277fff !important;
+	}
+}
+
+.textAreaBorder {
+	textarea {
+		min-height: 100px !important;
+		border-radius: 6px !important;
+		border: 1px solid #d1d6da !important;
+		box-shadow: 0 0 0 0px rgba(0, 204, 189, 0.2) !important;
+	}
+	textarea:hover,
+	textarea:focus-within {
+		background: #ffffff;
+		border: 1px solid #277fff !important;
+	}
+}
+
+//-------------- Label -----
+.label {
+	:global {
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+		.ant-form-item-control {
+			display: none;
+		}
+	}
+}
+//-------------- Radio Button -----
+
+.radio {
+	:global {
+		.ant-radio-wrapper > span {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 23px;
+			color: #2a2b2d;
+		}
+
+		.ant-radio-inner {
+			width: 20px;
+			height: 20px;
+			border-radius: 4px;
+			border: 1px solid #d1d6da;
+			background-color: #ffffff !important;
+		}
+
+		.ant-radio-inner::after {
+			width: 20px;
+			height: 20px;
+			border-radius: 4px;
+			top: -1px;
+			left: 0px;
+			background-image: url("../assets/checkmark.svg");
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: center;
+			background-color: #277fff;
+		}
+
+		.ant-radio-inner:hover {
+			background-color: rgba(39, 127, 255, 0.3) !important;
+			border: 1px solid #277fff;
+		}
+
+		.ant-radio-button-wrapper,
+		.ant-radio-button-wrapper::before,
+		.ant-radio-button-wrapper:focus-within {
+			border-width: 0px !important;
+			background-color: #ffffff !important;
+			box-shadow: 0 0 0 0px rgba(0, 138, 170, 0) !important;
+		}
+
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+	.radioButton {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
+}
+
+//-------------- Image Radio Button -----
+.imageRadio {
+	:global {
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+}
+.imageRadioButton {
+	width: 50%;
+	height: 158px !important;
+	text-align: center;
+	margin: 0px !important;
+	padding: 0px !important;
+	border-width: 0px !important;
+
+	font-size: 18px !important;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 40px !important;
+	color: #2a2b2d !important;
+	text-align: center;
+
+	&:global(.ant-radio-button-wrapper) {
+		border-color: #ffffff !important;
+		background-color: #ffffff !important;
+	}
+
+	&:global(.ant-radio-button-wrapper:not(:first-child)::before) {
+		border-color: #ffffff !important;
+		background-color: #ffffff !important;
+	}
+	&:global(.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within) {
+		border-color: #ffffff !important;
+		background-color: #ffffff !important;
+		box-shadow: none;
+	}
+
+	&:global(.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)) {
+		font-weight: bold !important;
+		color: #277fff !important;
+
+		svg {
+			width: 120px;
+			height: 120px;
+			padding: 15px;
+			border: 0px solid black;
+			background-color: #277fff;
+			border-radius: 6px;
+			path {
+				stroke: #ffffff !important;
+			}
+		}
+	}
+
+	.imageRadioWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	svg {
+		width: 120px;
+		height: 120px;
+		padding: 15px;
+		border: 0px solid black;
+		background-color: #eaeef4;
+		border-radius: 6px;
+
+		path {
+			stroke: #9199aa !important;
+		}
+	}
+}
+
+.imageRadioButton:hover {
+	svg {
+		width: 120px;
+		height: 120px;
+		padding: 15px;
+		border: 0px solid black;
+		background-color: rgba(39, 127, 255, 0.3);
+		border-radius: 6px;
+
+		path {
+			stroke: #277fff !important;
+		}
+	}
+}
+
+//-------------- Slider -----
+
+.select {
+	:global {
+		.ant-select:hover {
+			border: 0px solid #ffffff;
+		}
+
+		.ant-select-selector {
+			height: 54px !important;
+			border-radius: 6px !important;
+			border: 1px solid #d1d6da;
+		}
+
+		.ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input)
+			.ant-select-selector {
+			border: 1px solid #004750;
+			outline: 0;
+			box-shadow: 0 0 0 0px rgba(0, 204, 189, 0.0);
+		}
+
+		.ant-select-focused:not(.ant-select-disabled).ant-select-single:not(.ant-select-customize-input)
+			.ant-select-selector
+			> .ant-select-selection-placeholder {
+			font-weight: 600;
+			color: #004750;
+		}
+
+		.ant-select:hover > .ant-select-selector,
+		.ant-select:focus > .ant-select-selector {
+			border: 1px solid #004750;
+		}
+
+		.ant-select-selection-item {
+			line-height: 54px !important;
+			font-weight: 600 !important;
+		}
+		.ant-select-selection-placeholder {
+			line-height: 54px !important;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			color: #9199aa;
+			opacity: 1;
+		}
+
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+}
+
+:global {
+	.ant-select-item {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #2a2b2d;
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+
+	.ant-select-item-option-selected {
+		font-weight: 600 !important;
+		background-color: #ffffff !important;
+	}
+}
+//-------------- Slider -----
+
+.slider {
+	:global {
+		.ant-slider {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px !important;
+			line-height: 20px !important;
+			text-align: left;
+			color: #9199aa !important;
+			letter-spacing: 0.06em;
+
+			&:hover .ant-slider-rail {
+				background-color: #ffffff;
+			}
+		}
+
+		.ant-slider-rail,
+		.ant-slider-rail:hover {
+			height: 12px !important;
+			background-color: #ffffff;
+			border: 1px solid #d1d6da;
+			border-radius: 6px;
+		}
+
+		.ant-slider-track,
+		.ant-slider-track:hover {
+			height: 12px !important;
+			border-radius: 6px;
+			background-color: #70e878;
+			border-width: 0px;
+		}
+
+		.ant-slider-handle,
+		.ant-slider-handle:hover,
+		.ant-slider-handle:focus {
+			height: 24px;
+			width: 24px;
+			background-color: #70e878;
+			border: 1px solid #70e878;
+			box-shadow: 0 0 black;
+		}
+
+		.ant-form-item-label > label {
+			font-weight: 700;
+			font-size: 18px;
+			color: #2a2b2d;
+			line-height: 23px;
+		}
+		.ant-form-item-label {
+			min-width: 100%;
+		}
+	}
+}
+
+.sliderZero {
+	:global {
+		.ant-slider-handle {
+			height: 24px;
+			width: 24px;
+			background-color: #ced5e0;
+			border: 1px solid #ced5e0;
+		}
+	}
+}
+
+//-------------- CircleButton -----
+
+.circleButton {
+    height: 33px;
+    width: 33px;
+    font-size: 18px !important;
+	padding: ~'calc((@{layout-header-height} - 42px) / 2)' 0;
+	color: #ffffff !important;
+	vertical-align: sub;
+	background: transparent !important;
+	.ant-avatar {
+		:global {
+			background: none!important;
+		}
+	}
+	& > svg {
+		width: 28px;
+		height: 33px;
+		& > path {
+			stroke: #ffffff;
+		}
+	}
+
+	&:hover {
+		//background: #00aad1 !important;
+	}
+	&:focus {
+		//background: #006076 !important;
+	}
+}
+
+.button {
+	width: 192px;
+	height: 50px;
+	border-radius: 6px;
+}
+
+:global(.ant-btn-sm) {
+	height: 40px !important;
+}
+
+//--------------Button Type 1 (black) -----
+
+.buttonType1 {
+	background-color: #2a2b2d;
+	// background-image: url("../assets/button_bg/button_bg_black_1.svg");
+	border-width: 0;
+	color: #f6f9fb;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType1:hover {
+	background-color: #545963;
+	// background-image: url("../assets/button_bg/button_bg_black_2.svg");
+}
+
+.buttonType1:focus {
+	background-color: #080809;
+	// background-image: url("../assets/button_bg/button_bg_black_3.svg");
+}
+
+.buttonType1:disabled,
+.buttonType1:disabled:hover,
+.buttonType1:disabled:focus {
+	color: #95a0b2;
+	background-color: #eaeef4;
+	// background-image: url("../assets/button_bg/button_bg_black_4.svg");
+}
+
+//--------------Button Type 2 (blue) --------
+
+.buttonType2 {
+	background-color: #232323;
+	// background-image: url("../assets/button_bg/button_bg_blue_1.svg");
+	border-width: 0;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType2:hover {
+	background-color: #00aad1;
+	// background-image: url("../assets/button_bg/button_bg_blue_2.svg");
+}
+
+.buttonType2:focus {
+	background-color: #00738d;
+	// background-image: url("../assets/button_bg/button_bg_blue_3.svg");
+}
+
+.buttonType2:disabled,
+.buttonType2:disabled:hover,
+.buttonType2:disabled:focus {
+	color: #95a0b2;
+	background-color: #eaeef4;
+	// background-image: url("../assets/button_bg/button_bg_blue_4.svg");
+}
+
+//--------------Button Type 3 (Bordered) --------
+
+.buttonType3 {
+	background-color: #ffffff;
+	border: 1px solid #00748f;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #00748f;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType3:hover {
+	background-color: rgba(0, 116, 143, 0.2);
+	border-width: 0px;
+	color: #00748f;
+}
+
+.buttonType3:focus {
+	background-color: #ffffff;
+	border: 1px solid #004750;
+	color: #004750;
+}
+
+.buttonType3:disabled,
+.buttonType3:disabled:hover,
+.buttonType3:disabled:focus {
+	background-color: #ffffff;
+	border: 1px solid #95a0b2;
+	color: #95a0b2;
+}
+
+:global(.ant-btn-icon-only.ant-btn-lg) {
+	height: 50px;
+	min-width: 50px;
+	width: auto;
+	border-radius: 6px;
+}
+
+//--------------Button Type 4 (White) --------
+
+.buttonType4White {
+	background-color: #ffffff;
+	border: none;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #2a2b2d;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType4White:hover {
+	background-color: #cce3e9;
+	border-width: 0px;
+	color: #00748f;
+}
+
+.buttonType4White:focus {
+	background-color: #ffffff;
+	border: 1px solid #004750;
+	color: #004750;
+}
+
+.buttonType4White:disabled,
+.buttonType4White:disabled:hover,
+.buttonType4White:disabled:focus {
+	background-color: #ffffff;
+	border: 1px solid #95a0b2;
+	color: #95a0b2;
+}
+
+:global(.ant-btn-icon-only.ant-btn-lg) {
+	height: 50px;
+	min-width: 50px;
+	width: auto;
+	border-radius: 6px;
+}
+
+//--------------Button Type 4 (Solid) --------
+
+.buttonType4 {
+	background-color: #004750;
+	border-width: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #f6f9fb;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType4:hover {
+	background-color: rgba(0, 204, 189, 0.2);
+	border-width: 0px;
+	color: #004750;
+}
+
+.buttonType4:focus {
+	background-color: #00a99d;
+	border-width: 0px;
+	color: #f6f9fb;
+}
+
+.buttonType4:disabled,
+.buttonType4:disabled:hover,
+.buttonType4:disabled:focus {
+	background-color: #eaeef4;
+	border-width: 0px;
+	color: #95a0b2;
+}
+
+//--------------Button Type 4 (solid blue) --------
+
+.buttonType4Dark {
+	background-color: #004750;
+	border-width: 0;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	border-width: 0px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType4Dark:hover {
+	background-color: #004750;
+}
+
+.buttonType4Dark:focus {
+	background-color: #004750;
+}
+
+.buttonType4Dark:disabled,
+.buttonType4Dark:disabled:hover,
+.buttonType4Dark:disabled:focus {
+	background-color: #eaeef4;
+	color: #95a0b2;
+}
+
+//--------------Button Type 5 (Solid Icon) --------
+
+.buttonType5 {
+	background-color: rgba(0, 204, 189, 0.2);
+	border-width: 0;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color: #004750;
+	line-height: 20px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType5:hover {
+	background-color: #ffffff;
+	border: 2px solid #004750;
+	color: #004750;
+}
+
+.buttonType5:focus {
+	background-color: #004750;
+	border-width: 0px;
+	color: #ffffff;
+}
+
+.buttonType5:disabled,
+.buttonType5:disabled:hover,
+.buttonType5:disabled:focus {
+	background-color: #eaeef4;
+	border-width: 0px;
+	color: #95a0b2;
+}
+
+//--------------Button Type 6 (Bordered Icon) --------
+
+.buttonType6 {
+	background-color: #ffffff;
+	border: 2px solid #232323;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color: #232323;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.buttonType6:hover {
+	background-color: #ffffff;
+	border: 2px solid #004750;
+	color: #004750;
+}
+
+.buttonType6:focus {
+	border-width: 0px;
+	background-color: rgba(0, 138, 170, 0.2);
+	color: #232323;
+}
+
+.buttonType6:disabled,
+.buttonType6:disabled:hover,
+.buttonType6:disabled:focus {
+	background-color: #ffffff;
+	border: 2px solid #95a0b2;
+	color: #95a0b2;
+}
+
+//--------------Button Type 7 (Bordered Light) --------
+
+.buttonType7 {
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.buttonType7:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 2px solid #ffffff;
+	color: #ffffff;
+}
+
+.buttonType7:focus {
+	border-width: 0px;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #004750;
+}
+
+.buttonType7:disabled,
+.buttonType7:disabled:hover,
+.buttonType7:disabled:focus {
+	background-color: #ffffff;
+	border: 2px solid #95a0b2;
+	color: #95a0b2;
+}
+
+.buttonBack {
+	background-color: #ffffff;
+	border: 1px solid #00748f;
+	color: #00748f;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+
+	:global {
+		.anticon {
+			display: none;
+		}
+	}
+}
+
+//--------------Text Types --------
+
+//-------Web Texts ------
+
+.textH1 {
+	font-style: normal !important;
+	font-weight: 800 !important;
+	font-size: 120px !important;
+	line-height: 144px !important;
+	text-align: center !important;
+}
+
+.textH1Small {
+	font-style: normal !important;
+	font-weight: 800 !important;
+	font-size: 42px !important;
+	line-height: 48px !important;
+	text-align: center !important;
+}
+
+.textH2Large {
+	font-style: normal !important;
+	font-weight: 800 !important;
+	font-size: 82px !important;
+	line-height: 103px !important;
+	text-align: center !important;
+}
+
+.textH2 {
+	font-style: normal !important;
+	font-weight: 800 !important;
+	font-size: 36px !important;
+	line-height: 45px !important;
+	text-align: center !important;
+}
+
+.textH3 {
+	font-style: normal !important;
+	font-weight: 800 !important;
+	font-size: 32px !important;
+	line-height: 40px !important;
+	text-align: center !important;
+}
+
+.textH3Light {
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 32px !important;
+	line-height: 40px !important;
+	text-align: center !important;
+}
+
+.textWebInfo {
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 18px !important;
+	line-height: 23px !important;
+	text-align: center !important;
+}
+
+.textWebMenu {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 25px !important;
+	text-align: center !important;
+}
+
+//-------Admin Texts ------
+
+.textHeadline {
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 24px !important;
+	line-height: 30px !important;
+	text-align: center !important;
+}
+
+.textTitle {
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 24px !important;
+	line-height: 30px !important;
+	text-align: center !important;
+}
+
+.textLines {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 23px !important;
+	text-align: center !important;
+}
+
+.textInfo {
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 16px !important;
+	line-height: 20px !important;
+	text-align: center !important;
+}
+
+.textButton {
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 18px !important;
+	line-height: 23px !important;
+	text-align: center !important;
+}
+
+.textSteps {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	text-align: center !important;
+}
+
+.textBack {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	text-align: center !important;
+}
+
+.textLink {
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 14px !important;
+	line-height: 17px !important;
+	text-align: center !important;
+}
+
+//--------------Text Color Types --------
+
+.textDarkColor {
+	color: @black !important;
+}
+
+.textPrimaryColor {
+	color: @primary-color !important;
+}
+
+.textSecondaryColor {
+	color: #232323 !important;
+}
+
+.textLightColor {
+	color: #ffffff !important;
+}
+
+.textBackColor {
+	color: #a4adba !important;
+}
+
+.textInfoColor {
+	color: #9199aa !important;
+}
+
+@media screen and (max-width: @screen-sm) {
+	.buttonBack {
+		width: 70px;
+		:global {
+			.anticon {
+				display: inline-block;
+			}
+		}
+		a {
+			display: none;
+		}
+	}
+}
+.createBtn {
+	float: right;
+	a {
+		color: #fff;
+		background: #004750;
+		border: #004750;
+		padding: 12px 24px;
+		border-radius: 5px;
+	}
+  }

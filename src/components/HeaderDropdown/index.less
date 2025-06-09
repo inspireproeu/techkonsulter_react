@@ -1,0 +1,28 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+	//margin-top: -20px !important;
+	position: fixed;
+}
+
+.container > * {
+	background-color: @popover-bg;
+	border-radius: 0px;
+	box-shadow: @shadow-1-down;
+}
+
+@media only screen and (max-width: @screen-md) {
+	.container {
+		//margin-top: -20px !important;
+	}
+}
+
+@media screen and (max-width: @screen-xs) {
+	.container {
+		width: 100% !important;
+		padding: 0px 20px 20px 20px;
+	}
+	.container > * {
+		border-radius: 0;
+	}
+}

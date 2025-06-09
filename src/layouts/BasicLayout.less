@@ -1,0 +1,336 @@
+@import '~antd/es/style/themes/default.less';
+
+:global {
+  .ant-table-thead>tr>th {
+    font-weight: 600 !important;
+  }
+
+  .tableCell {
+    text-transform: capitalize;
+  }
+
+  .white {
+    color: #ffffff;
+  }
+}
+
+.menucontainer {
+  :global {
+    .ant-menu-item-selected {
+      width: 92% !important;
+      padding-left: 16px;
+      background: #3335a1 !important;
+      border-radius: 0 2.2rem 2.2rem 0;
+    }
+
+    .ant-menu {
+      .ant-menu-submenu-title {
+        height: 38px !important;
+      }
+
+      .ant-pro-menu-item-title {
+        font-size: 14px;
+        color: #ffffff
+      }
+
+      .anticon,
+      .span.anticon.anticon-dashboard {
+        font-size: 14px;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .ant-pro-sider-logo {
+      display: inline;
+      height: 4rem;
+      margin-bottom: 1.2rem;
+
+      img {
+        //height: 17px;
+        margin: 8px;
+      }
+    }
+
+    .ant-menu-submenu-inline {
+      padding-left: 0 !important;
+    }
+
+    .ant-menu-item {
+      margin-bottom: 18px !important;
+    }
+
+    .ant-pro-sider {
+      background-color: #2d2f7a;
+
+      .ant-menu-sub {
+        background-color: #2d2f7a !important;
+        padding-left: 2.4rem;
+      }
+    }
+  }
+}
+
+:global {
+
+  .ant-pro-basicLayout-content {
+    margin: 24px 24px 0 24px;
+  }
+  .ant-pro-sider {
+    @media screen and (max-width: @screen-sm) {
+      background-color: #2d2f7a;
+
+      .ant-pro-global-header-logo {
+        a {
+          img {
+            height: 18px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .ant-page-header-heading-title {
+    display: none !important;
+  }
+
+  .ant-form-item-label {
+    // text-align: unset !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    label {
+      color: #004750 !important;
+      font-size: 14px !important;
+      font-weight: 600;
+    }
+  }
+
+  .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    content: ' ' !important;
+  }
+
+  .ant-form-item-label>label::after {
+    content: ' ' !important;
+  }
+
+  #productForm,
+  #campaignForm,
+  #loginform,
+  #UserRegister,
+  #brandForm {
+
+    // .ant-input {
+    //   color: #677389 !important;
+    //   border: 0.1rem solid #cfd6db !important;
+    //   border-radius: 0.4rem !important;
+    //   padding: 8px !important;
+    //   font-size: 14px !important;
+    //   width: 100%;
+    //   caret-color: #5457ff;
+    // }
+    .ant-table-tbody>tr.ant-table-row-selected>td {
+      background-color: #e6f7ff;
+    }
+
+    .ant-table-cell {
+      font-weight: 700 !important;
+    }
+  }
+
+  .ant-table-tbody>tr.ant-table-row-selected>td {
+    background-color: #e6f7ff !important;
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next,
+  .ant-pagination-item {
+    min-width: 23px;
+    height: 23px;
+    line-height: 23px;
+  }
+
+  .ant-select-selector {
+    background: #fff;
+    color: #677389;
+    border: .1rem solid #cfd6db !important;
+    border-radius: .4rem !important;
+    padding: 1rem;
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .ant-picker-range {
+    border-radius: 6px;
+  }
+
+  .ant-btn,
+  .ant-picker {
+    border-radius: 6px;
+  }
+
+  .ant-btn-primary {
+    // background: #6262fe;
+    // border-color: #6262fe;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    // height: 24px;
+    // padding: 10px 15px;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+    height: 18px;
+  }
+
+  .ant-select-single .ant-select-selector .ant-select-selection-item {
+    // line-height: 18px !important;
+  }
+
+  #loginform,
+  #UserRegister {
+
+    .ant-form-item-label>label,
+    .ant-checkbox-wrapper {
+      color: #068FA7 !important;
+    }
+
+    .ant-form-item {
+      .ant-input {
+        border: none !important;
+        background: #F2F2F2 !important;
+        color: #068FA7 !important;
+      }
+    }
+
+    .ant-input:focus,
+    .ant-input-focused {
+      box-shadow: none;
+    }
+  }
+
+  #loginForm {
+    .ant-form-item {
+      .ant-input {
+        font-weight: 700;
+      }
+    }
+  }
+
+  #UserRegister {
+    .ant-form-item {
+      .ant-input {
+        font-weight: 400;
+      }
+    }
+  }
+
+  #UserRegister {
+    .ant-form-item {
+      width: 100%;
+    }
+
+    .ant-input-group.ant-input-group-compact {
+      display: flex;
+    }
+
+    .ant-card-body {
+      padding: 10px;
+    }
+
+    .ant-input-suffix {
+      display: none !important;
+    }
+
+    .ant-input::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  .ant-select-arrow {
+    color: #068FA7 !important;
+  }
+
+  .loginBtn {
+    border-color: #F6A92B;
+    background: #F6A92B;
+    color: #ffffff;
+  }
+
+  .rc-footer-bottom-container {
+    background: #ffffff !important;
+    color: #068FA7 !important;
+    font-size: 25px !important;
+  }
+
+  .rc-footer-container {
+    padding: 60px 0 20px !important;
+  }
+
+  .rc-footer-bottom {
+    background: #ffffff !important;
+  }
+
+  .addtocart {
+    background: #000000 !important;
+    border-color: unset !important;
+  }
+
+  .ant-list-item-meta-avatar {
+    width: 100px !important;
+  }
+
+  .ant-list-item-meta-title,
+  .ant-list-item-meta-description {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    min-width: 50px !important;
+    white-space: nowrap !important;
+  }
+
+  .ant-picker-range {
+    border-radius: 0.4rem !important;
+    padding: 0.8rem !important;
+    font-size: 1rem !important;
+  }
+
+  .ant-input-number {
+    // border-radius: 0.4rem !important;
+    // padding: 0.4rem !important;
+    // font-size: 1rem !important;
+  }
+
+  .ant-layout-header {
+    font-size: 14px;
+  }
+
+  .ant-alert-info {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+  }
+}
+
+:global {
+  .ant-pro-table-list-toolbar-title {
+    font-weight: bolder !important;
+    color: #2d2f7a !important;
+  }
+}
+
+.logoutmessage {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: 600;
+}

@@ -1,0 +1,328 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+:global {
+  .ant-form-item-label {
+    text-align: left !important;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #fff !important;
+  height: 7%;
+  width: 100%;
+  box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+  transition: background 0.3s, width 0.2s;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 25px;
+  height: 70px;
+  padding: 20px;
+}
+
+.loginContainer1HeaderText {
+  // font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.loginContainer1Text {
+  // font-family: Poppins;
+  font-size: 1.5rem;
+  color: #004750 !important;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  width: 500px;
+  border-radius: 6px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+
+  .formsection {
+    flex: 1;
+    padding: 28px 60px;
+  }
+
+  .registerformsection {
+    flex: 1;
+    padding: 20px 40px 10px 40px;
+  }
+
+  .contentsection {
+    width: 334px;
+    background-color: #004750;
+    background-image: url("../../assets/section_bg.svg");
+    padding: 40px;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: @text-color-secondary;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  :global {
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+
+    .ant-result {
+      padding: 0px 0px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-result-subtitle {
+      color: #232323 !important;
+      margin-top: 10px;
+    }
+  }
+}
+
+.mainmobile {
+  width: 100%;
+  margin: 5%;
+
+  .formsection {
+    flex: 1;
+    padding: 5% 5% !important;
+  }
+
+  .registerformsection {
+    flex: 1;
+    padding: 20px 20px 10px 20px !important;
+  }
+}
+
+.registerpage {
+  width: 950px !important;
+}
+
+.borderbutton {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  width: 192px;
+  height: 50px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.filledbutton {
+  background-color: #232323;
+  border-width: 0;
+  width: 192px;
+  height: 50px;
+  border-radius: 6px;
+  color: #f6f9fb;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.previousbutton {
+  background-color: '#ffffff';
+  border: 1px solid #00748f;
+  width: 192px;
+  height: 50px;
+  border-radius: 6px;
+  color: #00748f;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+
+  :global {
+    .anticon {
+      display: none;
+    }
+  }
+}
+
+.formsectionheading {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 34px;
+  color: #004750;
+  text-align: center;
+}
+
+.formsectionsubheading {
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 34px;
+  color: #004750;
+  text-align: center;
+}
+
+.links {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.contentsectionheading {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 34px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contentsectiontext {
+  width: 216px;
+  margin: 40px auto 56px auto;
+}
+
+.formsectiontext {
+  color: #9199aa;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.logo {
+  margin-bottom: 60px;
+  height: 30px;
+}
+
+.iconprimary {
+  color: #004750 !important;
+}
+
+.inputContainer4 {
+  margin-top: 15px;
+  height: 20%;
+  text-align: center;
+}
+
+.welcomeText {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: @screen-md) {
+  .previousbutton {
+    width: 70px;
+
+    :global {
+      .anticon {
+        display: inline-block;
+      }
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  .filledbutton {
+    width: 150px;
+  }
+}
+
+.buttonTypes {
+  border-width: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  height: 38px;
+  color: #fff;
+  border-color: #004750;
+  background-color: #004750;
+  border-radius: 25px;
+}
+
+.buttonTypes:focus,
+.buttonTypes:hover,
+.buttonTypes:active {
+  background: #004750 !important;
+}
+
+.buttonProgress {
+  margin-left: '5px'
+}
+
+.headerLogoText {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.main1 {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 6px;
+  margin: 0 auto;
+
+  .formsection {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
+
+.logo_dark {
+  text-align: center;
+
+  img {
+    height: 70px;
+  }
+}

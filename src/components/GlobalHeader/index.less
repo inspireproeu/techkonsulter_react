@@ -1,0 +1,271 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  background: #232323;
+  padding: 0px !important;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 300px;
+  border-radius: 8px 0px 8px 8px;
+  margin-top: -4px;
+
+  .menuItemWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  :global(.anticon) {
+    margin-right: 22px !important;
+    font-size: 22px !important;
+  }
+
+  :global(.ant-dropdown-menu) {
+    padding: 0px !important;
+  }
+
+  :global(.ant-dropdown-menu-item-divider) {
+    margin: 0px;
+  }
+
+  :global(.ant-dropdown-menu-item-selected) {
+    background-color: #006076;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0px 10px 0px 24px;
+    margin: 0px;
+
+    &:hover {
+      background-color: #00aad1;
+    }
+
+    &:focused {
+      background-color: #006076;
+    }
+  }
+
+  .logoutbutton {
+    background-color: #004750 !important;
+    // &:hover {
+    // 	background-color: rgba(255, 255, 255, 0.4) !important;
+    // }
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  // height: 80px;
+  margin-left: auto;
+  overflow: hidden;
+  min-width: 188px;
+  justify-content: flex-end;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 0px 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    >span {
+      vertical-align: middle;
+    }
+
+    /*&:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }*/
+  }
+
+  .search {
+    padding: 0 12px;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .account {
+    .avatar {
+      height: 40px;
+      width: 40px;
+      font-size: 33px;
+      padding:~'calc((@{layout-header-height} - 50px) / 2)'0;
+      color: #ffffff;
+      vertical-align: top;
+      background: @primary-color;
+
+      font-size: 20px;
+
+      &>svg>path {
+        stroke: #ffffff;
+      }
+
+    }
+  }
+}
+
+.dark {
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+
+    >span {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+  }
+}
+
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+
+      >span {
+        color: @text-color;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+
+        >span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
+.middle {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.middleHeading {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  margin-top: 6px;
+  margin-bottom: 6px !important;
+  color: #2a2b2d;
+}
+
+.left {
+  display: flex;
+  float: left;
+  height: 100%;
+  min-width: 188px;
+}
+
+.headerLogo img {
+  height: 42px;
+}
+
+.headerLogoText img {
+  // padding: 10px 0px 0px 10px;
+  height: 40px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .headerLogo img {
+    height: 40px;
+  }
+
+  .headerLogoText img {
+    padding: 8px 0px 0px 7px;
+    height: 30px;
+  }
+
+  .right {
+    height: 60px;
+    right: 5%;
+  }
+
+  .middle {
+    height: 60px;
+  }
+}
+
+.profile {
+  color: transparent;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  color: #004750;
+  font-weight: bold;
+}
+
+.company {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .right {
+    position: absolute;
+    top: 0;
+
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+
+    .search {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .menu {
+    width: 100% !important;
+  }
+}
+
+.language {
+  font-size: 14px;
+  padding: calc((52px - 42px) / 2) 14px;
+  font-weight: 700;
+}
+
+.email {
+  font-size: 14px;
+  color: red !important;
+}
