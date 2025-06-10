@@ -1330,7 +1330,7 @@ const Projects = (props) => {
 
         setPrintView(true)
         setProjValues(params)
-        setPageLoading(false)
+        // setPageLoading(false)
         // await remarket_recycled(id)
       })
       .catch((err) => {
@@ -1345,8 +1345,9 @@ const Projects = (props) => {
   useEffect(() => {
     if (projValues && printView && equipemetCategory && consumedco2 && savedCO2 && remarketRecycled) {
       setTimeout(() => {
+        setPageLoading(false)
         handlePrint();
-      }, [2000])
+      }, [2500])
       // setPrintView(false)
       // setPageLoading(false)
     }

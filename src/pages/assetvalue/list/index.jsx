@@ -190,7 +190,7 @@ const Complain = (props) => {
             }
 
             if (currentUser.userType !== 'ADMIN') {
-                if (currentUser?.client?.country === 'NORWAY' || currentUser?.partner?.country === 'NORWAY') {
+                if (currentUser?.client?.country === 'NORWAY' || currentUser?.partner?.country === 'NORWAY' || currentUser?.client?.country === 'NETHERLANDS' || currentUser?.partner?.country === 'NETHERLANDS') {
                     setcurrencyCode('NOK')
                 } else {
                     setcurrencyCode('SEK')
@@ -253,8 +253,10 @@ const Complain = (props) => {
                     let form_factor = itm.form_factor.toLowerCase();
                     // console.log("itm.grade", itm.grade)
                     let currenyValue = 0
-                    if (currencyCode === 'SEK') {
-                        currenyValue = Number(settings_value.euro_sek.replace(",", "."))
+                    if (currencyCode === 'NOK') {
+                        currenyValue = Number(settings_value.euro_nok.replace(",", "."));
+                    } else {
+                        currenyValue = Number(settings_value.euro_sek.replace(",", "."));
                     }
                     itm.last_6months_grade = Number(itm.last_6months_grade) ? itm.last_6months_grade : 'N/A'
                     itm.grade = getAssetValues(itm.grade, settings_value)
@@ -413,7 +415,7 @@ const Complain = (props) => {
                 </div>
                 {
                     currentUser.userType !== 'ADMIN' && settingsValues?.text ?
-                        <div style={{ marginLeft: '30px',marginTop: '10px', background: 'white', width: "30%" }}>
+                        <div style={{ marginLeft: '30px', marginTop: '10px', background: 'white', width: "30%" }}>
                             <div className="editor-container1">
                                 <div>
                                     <div dangerouslySetInnerHTML={{ __html: settingsValues?.text }} />
