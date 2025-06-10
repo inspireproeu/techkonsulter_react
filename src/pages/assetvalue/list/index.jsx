@@ -188,10 +188,11 @@ const Complain = (props) => {
                     pathname: '/projects'
                 });
             }
-
             if (currentUser.userType !== 'ADMIN') {
-                if (currentUser?.client?.country === 'NORWAY' || currentUser?.partner?.country === 'NORWAY' || currentUser?.client?.country === 'NETHERLANDS' || currentUser?.partner?.country === 'NETHERLANDS') {
+                if (currentUser?.client?.country === 'NORWAY' || currentUser?.partner?.country === 'NORWAY') {
                     setcurrencyCode('NOK')
+                } else if (currentUser?.client?.country === 'NETHERLANDS' || currentUser?.partner?.country === 'NETHERLANDS') {
+                    setcurrencyCode('€')
                 } else {
                     setcurrencyCode('SEK')
                 }
@@ -267,7 +268,7 @@ const Complain = (props) => {
                     }
                     if (itm.last_60_days_sold) {
                         let estimate_values = itm.last_60_days_sold;
-                        if (currentUser.userType === 'ADMIN') {
+                        if (currencyCode === '€') {
                             itm.last_60_days_sold = `${(Math.round(Number(estimate_values) - ((Number(estimate_values) / 100) * 10)))} - ${(Math.round(parseInt(Number(estimate_values)) + parseInt((Number(estimate_values) / 100) * 5)))} ${currencyCode}`;
                         } else {
                             itm.last_60_days_sold = `${Math.round(((Number(estimate_values) - ((Number(estimate_values) / 100) * 10))) * currenyValue)} - ${Math.round(((parseInt(Number(estimate_values)) + parseInt((Number(estimate_values) / 100) * 5))) * currenyValue)} ${currencyCode}`;
